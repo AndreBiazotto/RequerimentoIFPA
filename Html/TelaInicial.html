@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Tela inicial</title>
+    <link rel="stylesheet" type="text/css" href="../Css/Inicial.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  </head>
+  <body>
+    <img src="../Imagens/Fundo.png" alt="Tela de fundo" class="Fundo">
+    <div class="box">
+      <div class="img">
+        <img src="../Imagens/KeyPoints.svg" alt="Key Points">
+      </div>
+      <div class="login">
+        <form action="../Php/login.php" method="POST">
+          <img src="../Imagens/InformPersonal.svg" alt="InfoPessoal" class="InfoPerson">
+          <h3>Seja bem-vindo(a)</h3>
+          <div class="inputDiv one focus">
+            <div class="i">
+              <i class="fas fa-user"> </i>
+            </div>
+            <div>
+              <h5> Usuário</h5>
+              <label>
+                <input class="input" type="text" name="login">
+              </label>
+            </div>
+          </div>
+          <div class="inputDiv two focus">
+            <div class="i">
+              <i class="fas fa-lock"> </i>
+            </div>
+            <div>
+              <h5>Senha</h5>
+              <label>
+                <input class="input" type="password" name="senha">
+              </label>
+            </div>
+          </div>
+          <input type="submit" class="botao" value="Entrar">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width">
+        <title>Tela de cadastro de aluno</title>
+        <link rel="stylesheet" type="text/css" href="../Css/CadAlu.css">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    </head>
+    <body>
+        <img src="../Imagens/Fundo.png" alt="Tela de fundo" class="FundoA">
+        <div class="boxA">
+            <div class="imgA">
+                <img src="../Imagens/Cadastro.svg" alt="Imagem de cadastro">
+            </div>
+            <div class="formA">
+                <form action="TelaCadastroAluno.html">
+                    <div class="formAA">
+                        <div class="cadastro">
+                            <h3>Cadastre o discente</h3>
+                        </div>
+                        <div class="botaoRetornar">
+                            <button> <a href="Secretaria.html">Retornar</a></button>
+                        </div>
+                    </div>
+                    <div class="inputDivGroupA">
+                        <div class="inputsA">
+                            <label for="firstname"> Primeiro nome </label>
+                            <input id="firstname" type="text" placeholder="Insira o primeiro nome..." required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="lastname"> Sobrenome </label>
+                            <input id="lastname" type="text" placeholder="Insira o sobrenome..." required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="born"> Data de nascimento </label>
+                            <input id="born" type="date" placeholder="DD/MM/AAAA" required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="rg"> RG </label>
+                            <input id="rg" type="text" placeholder="Insira o numero de rg..." required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="cpf"> CPF </label>
+                            <input id="cpf" type="text" placeholder="Insira o numero do cpf, exemplo: 000.000.000-00" required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="email"> E-mail </label>
+                            <input id="email" type="email" placeholder="exemplo@.com.br" required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="tel"> Telefone de responsavel</label>
+                            <input id="tel" type="tel" placeholder="(XX) xxxxx-xxxx" required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="turma"> Turma </label>
+                            <input id="turma" type="number" placeholder="Insira o id da turma..." required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="senha"> Senha </label>
+                            <input id="senha" type="password" placeholder="Crie uma senha" required>
+                        </div>
+                        <div class="inputsA">
+                            <label for="confimasenha"> Confirme a senha </label>
+                            <input id="confimasenha" type="password" placeholder="Digite a senha novamente" required>
+                        </div>
+                    </div>
+                    <div class="botaoCadastrarA"> <!-- preciso que você verifique direito como finaliza o cadastro-->
+                        <button><a href="#">Cadastrar</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

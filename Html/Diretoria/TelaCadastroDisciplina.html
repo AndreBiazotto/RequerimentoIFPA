@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Tela de cadastro de disciplina</title>
+    <link rel="stylesheet" type="text/css" href="../../Css/CadDis.css">
+
+</head>
+<body>
+    <img src="../../Imagens/Fundo.png" alt="Tela de fundo" class="FundoD">
+    <div class="boxD">
+        <div class="imgD">
+            <img src="../../Imagens/disciplina.svg" alt="Imagem de cadastro de turma">
+        </div>
+        <div class="formD">
+            <form enctype="multipart/form-data" action="../../Php/cadastrarDisciplina.php" method="POST">
+                <div class="formDD">
+                    <div class="cadastroD">
+                        <h3>Cadastre de disciplina</h3>
+                    </div>
+                </div>
+                <div class="inputDivGroupD">
+                    <div class="inputsD">
+                        <label for="cod"> Codigo </label>
+                        <input name="codigo" id="cod" type="text" placeholder="Insira o codigo de turma..." required>
+                    </div>
+                    <div class="inputsD">
+                        <label for="nomet"> Nome da disciplina </label>
+                        <input name="nome" id="nomet" type="text" placeholder="Insira o nome da turma..." required>
+                    </div>
+                    <div class="inputsD">
+                        <label for="plane"> Planejamento </label>
+                        <input name="plane" id="plane" type="file" placeholder="Insira o planejamento..." required>
+                    </div>
+                </div>
+                <div class="botaoCadastrarD"> 
+                    <button type="submit"><a>Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

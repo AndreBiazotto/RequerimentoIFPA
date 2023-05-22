@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvica, serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(246,246,246,0.33);
+}
+.FundoP{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.boxP{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 3px 3px 6px rgba(0,0,0.246,0.13);
+}
+.imgP{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(200,224,212,0.30);
+}
+.imgP img{
+    width: 31rem;
+}
+.formP{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(200,224,212,0.12);
+    padding: 3rem;
+}
+.formPP{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.botaoAEntrarP{
+    display: flex;
+    align-items: center;
+}
+.botaoAEntrarP a{
+    text-decoration: none;
+    color: rgba(29,33,35,0.75);
+}
+.botaoAEntrarP button{
+    border: none;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgba(118,142,125,0.96);
+}
+.botaoAEntrarP button:hover{
+    background-image: linear-gradient(to right, #C3D7B0, #CDDDCA,#C3D7B0);
+}
+.cadastroP h3{
+    color: rgba(146,155,158,1);
+}
+.formPP h3::after{
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 15px;
+}
+.inputDivGroupP{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.inputsP{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.inputsP input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255,255,255,0.40);
+    box-shadow: 1px 1px rgba(0,0,0.10,0.16);
+    color: rgba(0,0,0.246,0.78);
+}
+.inputsP input:hover{
+    background-color: rgba(255,255,255,0.72);
+}
+.inputsP label{
+    top: -6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(146,155,158,1);
+    transition: 0.3s;
+}
+.inputsP label:hover{
+    transform: translateY(-20%);
+}
+.inputsP input:focus-visible{
+    outline: 1px solid #C9DECB;
+}
+.inputsP input::placeholder{
+    color: rgba(146,155,150,1);
+    font-style: italic;
+}
+.botaoCadastrarP{
+    display: flex;
+    justify-content: center;
+}
+.botaoCadastrarP a{
+    text-decoration: none;
+    color: rgba(29,33,35,0.75);
+}
+.botaoCadastrarP button{
+    width: 100%;
+    font-size: 0.93rem;
+    font-weight: 500;
+    border: none;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    padding: 0.65rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.botaoCadastrarP button:hover{
+    background-image: linear-gradient(to right, #C3D7B0, #CDDDCA, #C3D7B0);
+}
+@media screen and (max-width: 1330px){
+    .imgP{ display: none;}
+    .boxP{ width: 50%;}
+    .formP{ width: 100%;}
+}
+@media screen and (max-width: 1064px){
+    .boxP{
+        width: 70%;
+        height: auto;
+    }
+    .inputDivGroupP{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .FundoP{ display: none;}
+    body{background-color: rgba(245,248,247,0.75);}
+}

@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvica, serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(246,246,246,0.33);
+}
+.FundoT{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.boxT{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 3px 3px 6px rgba(0,0,0.246,0.13);
+}
+.imgT{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(200,224,212,0.30);
+}
+.imgT img{
+    width: 26rem;
+}
+.formT{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(200,224,212,0.12);
+    padding: 3rem;
+}
+.formTT{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cadastroT h3{
+    color: rgba(146,155,158,1);
+}
+.formTT h3::after{
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 15px;
+}
+.inputDivGroupT{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.inputsT{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.inputsT input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255,255,255,0.40);
+    box-shadow: 1px 1px rgba(0,0,0.10,0.16);
+    color: rgba(0,0,0.246,0.78);
+}
+.inputsT input:hover{
+    background-color: rgba(255,255,255,0.72);
+}
+.inputsT label{
+    top: -6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(146,155,158,1);
+    transition: 0.3s;
+}
+.inputsT label:hover{
+    transform: translateY(-20%);
+}
+.inputsT input:focus-visible{
+    outline: 1px solid #C9DECB;
+}
+.inputsT input::placeholder{
+    color: rgba(146,155,150,1);
+    font-style: italic;
+}
+.botaoCadastrarT{
+    display: flex;
+    justify-content: center;
+}
+.botaoCadastrarT a{
+    text-decoration: none;
+    color: rgba(29,33,35,0.75);
+}
+.botaoCadastrarT button{
+    width: 100%;
+    font-size: 0.93rem;
+    font-weight: 500;
+    border: none;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    padding: 0.65rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.botaoCadastrarT button:hover{
+    background-image: linear-gradient(to right, #C3D7B0, #CDDDCA, #C3D7B0);
+}
+@media screen and (max-width: 1330px){
+    .imgT{ display: none;}
+    .boxT{ width: 50%;}
+    .formT{ width: 100%;}
+}
+@media screen and (max-width: 1064px){
+    .boxT{
+        width: 70%;
+        height: auto;
+    }
+    .inputDivGroupT{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .FundoT{ display: none;}
+    body{background-color: rgba(245,248,247,0.75);}
+}

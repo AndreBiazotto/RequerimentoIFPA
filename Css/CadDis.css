@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Helvica, serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(246,246,246,0.33);
+}
+.FundoD{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.boxD{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 3px 3px 6px rgba(0,0,0.246,0.13);
+}
+.imgD{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(200,224,212,0.30);
+}
+.imgD img{
+    width: 20rem;
+}
+.formD{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(200,224,212,0.12);
+    padding: 3rem;
+}
+.formDD{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cadastroD h3{
+    color: rgba(146,155,158,1);
+}
+.formDD h3::after{
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.25rem;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 15px;
+}
+.inputDivGroupD{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.inputsD{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.inputsD input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(255,255,255,0.40);
+    box-shadow: 1px 1px rgba(0,0,0.10,0.16);
+    color: rgba(0,0,0.246,0.78);
+}
+.inputsD input:hover{
+    background-color: rgba(255,255,255,0.72);
+}
+.inputsD label{
+    top: -6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(146,155,158,1);
+    transition: 0.3s;
+}
+.inputsD label:hover{
+    transform: translateY(-20%);
+}
+.inputsD input:focus-visible{
+    outline: 1px solid #C9DECB;
+}
+.inputsD input::placeholder{
+    color: rgba(146,155,150,1);
+    font-style: italic;
+}
+.inputsD #plane::file-selector-button{
+    background-image: linear-gradient(to right, #CAE4C6, #CDDDCA, #CAD7C6);
+    border: 1px rgba(146,155,158,1);
+    border-radius: 5px;
+    color: #555555;
+}
+.inputsD #plane::file-selector-button:hover{
+    background-image: linear-gradient(to right, #C3D7B8, #CDDDCA, #C3D7B8);
+}
+.botaoCadastrarD{
+    display: flex;
+    justify-content: center;
+}
+.botaoCadastrarD a{
+    text-decoration: none;
+    color: rgba(29,33,35,0.75);
+}
+.botaoCadastrarD button{
+    width: 100%;
+    font-size: 0.93rem;
+    font-weight: 500;
+    border: none;
+    background-image: linear-gradient(to right, #CAE4C9, #CDDDCA, #CAD7C9);
+    padding: 0.65rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.botaoCadastrarD button:hover{
+    background-image: linear-gradient(to right, #C3D7B0, #CDDDCA, #C3D7B0);
+}
+@media screen and (max-width: 1330px){
+    .imgD{ display: none;}
+    .boxD{ width: 50%;}
+    .formD{ width: 100%;}
+}
+@media screen and (max-width: 1064px){
+    .boxD{
+        width: 70%;
+        height: auto;
+    }
+    .inputDivGroupD{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .FundoD{ display: none;}
+    body{background-color: rgba(245,248,247,0.75);}
+}
